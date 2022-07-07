@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bj.dao.StudentDao">
+    <!--
+        select ： 表示查询操作
+        id: 你需要执行的sql语法的唯一标识，mybatis会使用这个id的值来找到执行的sql语句
+        可以自定义但要求你使用接口中的方法名称
+
+        resultType: 表示结果类型的，是sql语句执行后得到的ResultSet,遍历这个ResultSet得到的对象的类型
+          值写的是类型的全限定名称
+          或者别名例如java.lang.Integer 别名是int
+           也就是接口中方法的返回值
+
+
+     <select id="selectStudents"  resultType="cn.bj.domain.Student">
+        select id,name,email,age from student order by id;
+    </select>
+    对等的jdbc
+    ResultSet rs=executeQuery("select id,name,email,age from student")
+    while(rs.next()){
+        Student student=new Student()
+        student.setId(rs.getInt("id"));
+        student.setName(rs.getInt("Name"));
+
+    }
+    -->
+    <!--代码片段 就是复用一些 语法  id 自定义命名 但得是 唯一 的值-->
+    <sql id="stuid" >
+          select name ,id,email,age
+    </sql>
+
+
+    <!--动态sql sql的内容是变化的，可以根据条件获取到不同的sql语句。
+        主要是where部分发生变化
+        动态sql的实现： 使用的是mybatis提供的表签，<if>,<where>,<foreach>
+    -->
+    <!-- if
+         <if test="使用参数java对象的属性值作为判断条件"
+         语法 属性=xxxx值">
+    -->
+    <select id="selectStudentIf" resultType="cn.bj.domain.Student">
+       <include refid="stuid" />  from student
+        where
+        <if test="name != null and name != ''">
+            name=#{name}
+        </if>
+        <if test="age>0">
+            or age>#{age}
+        </if>
+     <!--or 1=1-->
+    </select>
+    <!--where-->
+    <select id="selectStudentWhere" resultType="cn.bj.domain.Student">
+        select name,id,email,age from student
+        <where>
+            <if test="name != null and name != ''">
+                name=#{name}
+            </if>
+            <if test="age>0">
+                or age>#{age}
+            </if>
+        </where>
+
+    </select>
+
+    <!--foreach 用法一 List<Integer>
+        foreach 循环java中的数组，list集合的，主要用在sql的in语句中。
+        例： 学生id是 1001 1002 1003
+          select name,id,email,age from id in(1001,1002,1003)
+
+          collection:表示接口中的方法de参数的类型，如果是数组使用array，如果是list集合使用list
+          item：自定义的，表示数组或集合成员的变量
+          open: 循环开始的字符 “（”
+          close：循环结束的字符“ ）”
+          separator：集合成员之间的分隔符 ，
+    -->
+    <select id="selectForeachOne" resultType="cn.bj.domain.Student">
+        select name,id,email,age from student where id in
+        <foreach collection="list" item="myid" open="(" close=")" separator="," >
+            #{myid}
+        </foreach>
+    </select>
+    <!--foreach 用法二  传过来一个对象 差别就在 #{stu.属性名}-->
+    <select id="selectForeachTwo" resultType="cn.bj.domain.Student">
+        select * from student where id in
+        <foreach collection="list" item="stu" open="(" close=")" separator=",">
+            #{stu.id}
+        </foreach>
+
+    </select>
+    <!--foreach比较灵活可以随意的拼-->
+<!--    <select id="selectForeachTwo" resultType="cn.bj.domain.Student">
+        select * from student where id in (
+        <foreach collection="list" item="stu" >
+            #{stu.id} , #{stu.name},
+        </foreach>
+        -1)
+    </select>-->
+
+<!--查询全部 pagehelper -->
+    <select id="selectAll" resultType="cn.bj.domain.Student">
+        <include refid="stuid"/> from student order by id
+    </select>
+
+</mapper>
+

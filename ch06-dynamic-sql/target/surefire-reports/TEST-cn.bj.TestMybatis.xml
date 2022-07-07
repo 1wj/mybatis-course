@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="cn.bj.TestMybatis" time="2.462" tests="7" errors="6" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="E:\mybatis-course\ch06-dynamic-sql\target\test-classes;E:\mybatis-course\ch06-dynamic-sql\target\classes;E:\maven_work\repository\junit\junit\4.11\junit-4.11.jar;E:\maven_work\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;E:\maven_work\repository\org\mybatis\mybatis\3.5.1\mybatis-3.5.1.jar;E:\maven_work\repository\mysql\mysql-connector-java\5.1.44\mysql-connector-java-5.1.44.jar;E:\maven_work\repository\com\github\pagehelper\pagehelper\5.1.10\pagehelper-5.1.10.jar;E:\maven_work\repository\com\github\jsqlparser\jsqlparser\2.0\jsqlparser-2.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Wj\AppData\Local\Temp\surefire722877519695089028\surefirebooter2977235498089066940.jar C:\Users\Wj\AppData\Local\Temp\surefire722877519695089028 2021-06-28T13-16-43_414-jvmRun1 surefire7041871498654561684tmp surefire_0825311423035817387tmp"/>
+    <property name="surefire.test.class.path" value="E:\mybatis-course\ch06-dynamic-sql\target\test-classes;E:\mybatis-course\ch06-dynamic-sql\target\classes;E:\maven_work\repository\junit\junit\4.11\junit-4.11.jar;E:\maven_work\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;E:\maven_work\repository\org\mybatis\mybatis\3.5.1\mybatis-3.5.1.jar;E:\maven_work\repository\mysql\mysql-connector-java\5.1.44\mysql-connector-java-5.1.44.jar;E:\maven_work\repository\com\github\pagehelper\pagehelper\5.1.10\pagehelper-5.1.10.jar;E:\maven_work\repository\com\github\jsqlparser\jsqlparser\2.0\jsqlparser-2.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Wj"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre"/>
+    <property name="basedir" value="E:\mybatis-course\ch06-dynamic-sql"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Wj\AppData\Local\Temp\surefire722877519695089028\surefirebooter2977235498089066940.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="user.name" value="Wj"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="E:\maven_work\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Wj\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2021.1"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="user.dir" value="E:\mybatis-course\ch06-dynamic-sql"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\MySQL\MySQL Server 8.0\bin;E:\maven_work\apache-maven-3.3.9\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\Wj\AppData\Local\Microsoft\WindowsApps;C:\Users\Wj\.dotnet\tools;C:\Program Files\JetBrains\PyCharm 2019.3.3\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2021.1\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testSelectStudentIf2" classname="cn.bj.TestMybatis" time="2.105">
+    <error message="&#10;### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;sys.student&apos; doesn&apos;t exist&#10;### The error may exist in cn/bj/dao/OrderDao.xml&#10;### The error may involve defaultParameterMap&#10;### The error occurred while setting parameters&#10;### SQL: select name ,id,email       ,age from student         where                       name=?                                 or age&gt;?&#10;### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;sys.student&apos; doesn&apos;t exist" type="org.apache.ibatis.exceptions.PersistenceException">org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+### The error may exist in cn/bj/dao/OrderDao.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select name ,id,email       ,age from student         where                       name=?                                 or age>?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectStudentIf2(TestMybatis.java:35)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectStudentIf2(TestMybatis.java:35)
+</error>
+    <system-out><![CDATA[Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Class not found: org.jboss.vfs.VFS
+JBoss 6 VFS API is not available in this environment.
+Class not found: org.jboss.vfs.VirtualFile
+VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+Using VFS adapter org.apache.ibatis.io.DefaultVFS
+Find JAR URL: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/domain
+Not a JAR: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/domain
+Reader entry: Student.class
+Listing file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/domain
+Find JAR URL: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/domain/Student.class
+Not a JAR: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/domain/Student.class
+Reader entry: 漱壕&amp#0;&amp#0;&amp#0;4&amp#0;B
+Checking to see if class cn.bj.domain.Student matches criteria [is assignable to Object]
+Find JAR URL: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/vo
+Not a JAR: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/vo
+Reader entry: QueueParam.class
+Listing file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/vo
+Find JAR URL: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/vo/QueueParam.class
+Not a JAR: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/vo/QueueParam.class
+Reader entry: 漱壕&amp#0;&amp#0;&amp#0;4&amp#0; 
+Checking to see if class cn.bj.vo.QueueParam matches criteria [is assignable to Object]
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Find JAR URL: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/dao
+Not a JAR: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/dao
+Reader entry: OrderDao.class
+Reader entry: OrderDao.xml
+Reader entry: StudentDao.class
+Reader entry: StudentDao.xml
+Listing file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/dao
+Find JAR URL: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/dao/OrderDao.class
+Not a JAR: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/dao/OrderDao.class
+Reader entry: 漱壕&amp#0;&amp#0;&amp#0;4&amp#0;&amp#17;&amp#7;&amp#0;&amp#15;&amp#7;&amp#0;&amp#16;&amp#1;&amp#0;&amp#15;selectStudentIf&amp#1;&amp#0;((Lcn/bj/domain/Student;)Ljava/util/List;&amp#1;&amp#0;	Signature&amp#1;&amp#0;@(Lcn/bj/domain/Student;)Ljava/util/List<Lcn/bj/domain/Student;>;&amp#1;&amp#0;&amp#18;selectStudentWhere&amp#1;&amp#0;&amp#16;selectForeachOne&amp#1;&amp#0;"(Ljava/util/List;)Ljava/util/List;&amp#1;&amp#0;O(Ljava/util/List<Ljava/lang/Integer;>;)Ljava/util/List<Lcn/bj/domain/Student;>;&amp#1;&amp#0;&amp#16;selectForeachTwo&amp#1;&amp#0;R(Ljava/util/List<Lcn/bj/domain/Student;>;)Ljava/util/List<Lcn/bj/domain/Student;>;&amp#1;&amp#0;
+Find JAR URL: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/dao/OrderDao.xml
+Not a JAR: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/dao/OrderDao.xml
+Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+Find JAR URL: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/dao/StudentDao.class
+Not a JAR: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/dao/StudentDao.class
+Reader entry: 漱壕&amp#0;&amp#0;&amp#0;4&amp#0;&amp#20;&amp#7;&amp#0;&amp#18;&amp#7;&amp#0;&amp#19;&amp#1;&amp#0;&amp#15;selectStudentIf&amp#1;&amp#0;((Lcn/bj/domain/Student;)Ljava/util/List;&amp#1;&amp#0;	Signature&amp#1;&amp#0;@(Lcn/bj/domain/Student;)Ljava/util/List<Lcn/bj/domain/Student;>;&amp#1;&amp#0;&amp#18;selectStudentWhere&amp#1;&amp#0;&amp#16;selectForeachOne&amp#1;&amp#0;"(Ljava/util/List;)Ljava/util/List;&amp#1;&amp#0;O(Ljava/util/List<Ljava/lang/Integer;>;)Ljava/util/List<Lcn/bj/domain/Student;>;&amp#1;&amp#0;&amp#16;selectForeachTwo&amp#1;&amp#0;R(Ljava/util/List<Lcn/bj/domain/Student;>;)Ljava/util/List<Lcn/bj/domain/Student;>;&amp#1;&amp#0;	selectAll&amp#1;&amp#0;&amp#18;()Ljava/util/List;&amp#1;&amp#0;*()Ljava/util/List<Lcn/bj/domain/Student;>;&amp#1;&amp#0;
+Find JAR URL: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/dao/StudentDao.xml
+Not a JAR: file:/E:/mybatis-course/ch06-dynamic-sql/target/classes/cn/bj/dao/StudentDao.xml
+Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+Checking to see if class cn.bj.dao.OrderDao matches criteria [is assignable to Object]
+Checking to see if class cn.bj.dao.StudentDao matches criteria [is assignable to Object]
+Opening JDBC Connection
+Created connection 1210898719.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@482cd91f]
+==>  Preparing: select name ,id,email ,age from student where name=? or age>? 
+==> Parameters: 李四(String), 18(Integer)
+]]></system-out>
+    <system-err><![CDATA[Mon Jun 28 13:16:51 CST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+]]></system-err>
+  </testcase>
+  <testcase name="testSelectAll" classname="cn.bj.TestMybatis" time="0.081">
+    <error message="&#10;### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;sys.student&apos; doesn&apos;t exist&#10;### The error may exist in cn/bj/dao/StudentDao.xml&#10;### The error may involve defaultParameterMap&#10;### The error occurred while setting parameters&#10;### SQL: SELECT count(0) FROM student&#10;### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;sys.student&apos; doesn&apos;t exist" type="org.apache.ibatis.exceptions.PersistenceException">org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+### The error may exist in cn/bj/dao/StudentDao.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT count(0) FROM student
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectAll(TestMybatis.java:113)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectAll(TestMybatis.java:113)
+</error>
+    <system-out><![CDATA[Created connection 1771243284.
+Returned connection 1771243284 to pool.
+Cache Hit Ratio [SQL_CACHE]: 0.0
+Opening JDBC Connection
+Checked out connection 1771243284 from pool.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@69930714]
+==>  Preparing: SELECT count(0) FROM student 
+==> Parameters: 
+]]></system-out>
+    <system-err><![CDATA[Mon Jun 28 13:16:52 CST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+]]></system-err>
+  </testcase>
+  <testcase name="testSelectStudentWhere" classname="cn.bj.TestMybatis" time="0.015">
+    <error message="&#10;### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;sys.student&apos; doesn&apos;t exist&#10;### The error may exist in cn/bj/dao/StudentDao.xml&#10;### The error may involve defaultParameterMap&#10;### The error occurred while setting parameters&#10;### SQL: select name,id,email,age from student          WHERE name=?                                           or age&gt;?&#10;### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;sys.student&apos; doesn&apos;t exist" type="org.apache.ibatis.exceptions.PersistenceException">org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+### The error may exist in cn/bj/dao/StudentDao.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select name,id,email,age from student          WHERE name=?                                           or age>?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectStudentWhere(TestMybatis.java:46)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectStudentWhere(TestMybatis.java:46)
+</error>
+    <system-out><![CDATA[Opening JDBC Connection
+Created connection 1115201599.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4278a03f]
+==>  Preparing: select name,id,email,age from student WHERE name=? or age>? 
+==> Parameters: 李四(String), 18(Integer)
+]]></system-out>
+    <system-err><![CDATA[Mon Jun 28 13:16:52 CST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+]]></system-err>
+  </testcase>
+  <testcase name="test" classname="cn.bj.TestMybatis" time="0"/>
+  <testcase name="testSelectForeachOne" classname="cn.bj.TestMybatis" time="0.044">
+    <error message="&#10;### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;sys.student&apos; doesn&apos;t exist&#10;### The error may exist in cn/bj/dao/StudentDao.xml&#10;### The error may involve defaultParameterMap&#10;### The error occurred while setting parameters&#10;### SQL: select name,id,email,age from student where id in          (               ?          ,              ?          ,              ?          )&#10;### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;sys.student&apos; doesn&apos;t exist" type="org.apache.ibatis.exceptions.PersistenceException">org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+### The error may exist in cn/bj/dao/StudentDao.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select name,id,email,age from student where id in          (               ?          ,              ?          ,              ?          )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectForeachOne(TestMybatis.java:82)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectForeachOne(TestMybatis.java:82)
+</error>
+    <system-out><![CDATA[Opening JDBC Connection
+Created connection 1769193365.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6973bf95]
+==>  Preparing: select name,id,email,age from student where id in ( ? , ? , ? ) 
+==> Parameters: 1001(Integer), 1002(Integer), 1003(Integer)
+]]></system-out>
+    <system-err><![CDATA[Mon Jun 28 13:16:52 CST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+]]></system-err>
+  </testcase>
+  <testcase name="testSelectForeachTwo" classname="cn.bj.TestMybatis" time="0.071">
+    <error message="&#10;### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;sys.student&apos; doesn&apos;t exist&#10;### The error may exist in cn/bj/dao/StudentDao.xml&#10;### The error may involve defaultParameterMap&#10;### The error occurred while setting parameters&#10;### SQL: select * from student where id in          (               ?          ,              ?          )&#10;### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;sys.student&apos; doesn&apos;t exist" type="org.apache.ibatis.exceptions.PersistenceException">org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+### The error may exist in cn/bj/dao/StudentDao.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select * from student where id in          (               ?          ,              ?          )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectForeachTwo(TestMybatis.java:99)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectForeachTwo(TestMybatis.java:99)
+</error>
+    <system-out><![CDATA[Opening JDBC Connection
+Created connection 1196695891.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@47542153]
+==>  Preparing: select * from student where id in ( ? , ? ) 
+==> Parameters: 1001(Integer), 1002(Integer)
+]]></system-out>
+    <system-err><![CDATA[Mon Jun 28 13:16:52 CST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+]]></system-err>
+  </testcase>
+  <testcase name="testSelectStudentIf" classname="cn.bj.TestMybatis" time="0.079">
+    <error message="&#10;### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;sys.student&apos; doesn&apos;t exist&#10;### The error may exist in cn/bj/dao/StudentDao.xml&#10;### The error may involve defaultParameterMap&#10;### The error occurred while setting parameters&#10;### SQL: select name ,id,email,age        from student         where                       name=?                                 or age&gt;?&#10;### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;sys.student&apos; doesn&apos;t exist" type="org.apache.ibatis.exceptions.PersistenceException">org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+### The error may exist in cn/bj/dao/StudentDao.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select name ,id,email,age        from student         where                       name=?                                 or age>?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectStudentIf(TestMybatis.java:24)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectStudentIf(TestMybatis.java:24)
+</error>
+    <system-out><![CDATA[Opening JDBC Connection
+Created connection 1453774246.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@56a6d5a6]
+==>  Preparing: select name ,id,email,age from student where name=? or age>? 
+==> Parameters: 李四(String), 18(Integer)
+]]></system-out>
+    <system-err><![CDATA[Mon Jun 28 13:16:52 CST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+]]></system-err>
+  </testcase>
+</testsuite>

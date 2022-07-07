@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bj.dao.StudentDao">
+
+
+
+    <!--一个简单参数-->
+    <select id="selectStudent1" parameterType="int" resultType="cn.bj.domain.Student">
+        select id,name,email,age from student where id=#{ssid};
+    </select>
+
+    <!--多个参数使用@Param命名-->
+    <select id="selectMulitParam" resultType="cn.bj.domain.Student">
+        select id,name ,email,age from student where name=#{myname}
+                                                    or age=#{myage}
+    </select>
+    <!--多个参数使用  使用java对象的属性值，作为参数的实际值
+        使用对象语法：#{属性名，javaType=类型名称，jdbcType=数据类型}很少用
+        javaType指java中的属性数据类型
+        jdbcType：在数据库中的数据类型
+        例如：#{paramName，JavaType=java.lang.String,jdbcType=VARCHAR}
+        我们使用的简化方式：#{属性名} 其他的不需要
+    -->
+    <select id="seletcMulitObject" resultType="cn.bj.domain.Student">
+        select id,name ,email,age from student where name=#{paramName}
+                                                    or age=#{paramAge}
+    </select>
+
+    <!--灵活使用对象-->
+    <select id="seletcMulitStudent" resultType="cn.bj.domain.Student">
+        select id,name ,email,age from student where name=#{name}
+                                                    or age=#{age}
+    </select>
+
+    <!--多个参数按位置传输
+        mybatis 3.4之前,使用#{0}，#{1}
+        mybatis 3.4之后，使用#{arg0},arg{1}
+        但容易错不推荐使用
+    -->
+    <select id="selectMulitPosition" resultType="cn.bj.domain.Student">
+         select id,name ,email,age from student where name=#{arg0}
+                                                    or age=#{arg1}
+    </select>
+
+    <!--多个参数 使用map，使用语法#{map的key}
+        不推荐使用 几乎不会使用
+    -->
+    <select id="selectMulitByMap" resultType="cn.bj.domain.Student">
+         select id,name ,email,age from student where name=#{mynaem}
+                                                    or age=#{myage}
+    </select>
+
+
+
+    <!--使用$而不用#会有sql注入的问题-->
+    <select id="selectUse$"  resultType="cn.bj.domain.Student">
+        select id,name,email,age from student where name=${myname};
+    </select>
+
+    <!--一般用$替换列名或表名-->
+    <select id="selectUse$Order"  resultType="cn.bj.domain.Student">
+        select id,name,email,age from student order by ${mycol};
+    </select>
+
+
+</mapper>
+
+
+        <!--sql映射文件：写sql语句的，mybatis会执行这些sql语句
+    1.指定约束文件
+         <!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    mybatis-3-mapper.dtd是约束文件的名称，扩展名是dtd
+    2.约束文件的作用： 限制，检查在当前文件中出现的标签，属性必须符合Mybatis的要求
+    3.mapper 是当前文件的根标签， 不能改没有任何争议
+      namespace: 叫做命名空间，唯一值，可以是自定义的字符串但别用
+                要求使用Dao接口的全限定名称
+    4.在当前文件中，可以使用特定的标签，表示数据库的特点操作
+        <select>：表示查询
+        <update>：表示更新数据库的操作，就是在<update>标签中，写的是update sql语句
+        <insert>：表示插入，放得是insert语句
+        <delete>: 表示删除，执行的是delete语句
+mapper是映射的意思
+-->

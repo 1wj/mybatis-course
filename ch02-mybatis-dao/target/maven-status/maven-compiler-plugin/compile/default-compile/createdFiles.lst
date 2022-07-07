@@ -1,0 +1,4 @@
+cn\bj\domain\Student.class
+cn\bj\dao\impl\StudentDaoImpl.class
+cn\bj\dao\StudentDao.class
+cn\bj\utils\MybatisUtil.class

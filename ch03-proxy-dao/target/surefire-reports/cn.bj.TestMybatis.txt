@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: cn.bj.TestMybatis
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 1.817 s <<< FAILURE! - in cn.bj.TestMybatis
+testInserStudent(cn.bj.TestMybatis)  Time elapsed: 1.736 s  <<< ERROR!
+org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+### The error may exist in cn/bj/dao/StudentDao.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into student values(?,?,?,?);
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testInserStudent(TestMybatis.java:103)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testInserStudent(TestMybatis.java:103)
+
+testSelectStudent2(cn.bj.TestMybatis)  Time elapsed: 0.011 s  <<< ERROR!
+org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+### The error may exist in cn/bj/dao/StudentDao.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select * from student where id=?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectStudent2(TestMybatis.java:63)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectStudent2(TestMybatis.java:63)
+

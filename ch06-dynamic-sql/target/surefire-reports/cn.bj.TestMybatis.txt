@@ -1,0 +1,82 @@
+-------------------------------------------------------------------------------
+Test set: cn.bj.TestMybatis
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 2.462 s <<< FAILURE! - in cn.bj.TestMybatis
+testSelectStudentIf2(cn.bj.TestMybatis)  Time elapsed: 2.105 s  <<< ERROR!
+org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+### The error may exist in cn/bj/dao/OrderDao.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select name ,id,email       ,age from student         where                       name=?                                 or age>?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectStudentIf2(TestMybatis.java:35)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectStudentIf2(TestMybatis.java:35)
+
+testSelectAll(cn.bj.TestMybatis)  Time elapsed: 0.081 s  <<< ERROR!
+org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+### The error may exist in cn/bj/dao/StudentDao.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT count(0) FROM student
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectAll(TestMybatis.java:113)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectAll(TestMybatis.java:113)
+
+testSelectStudentWhere(cn.bj.TestMybatis)  Time elapsed: 0.015 s  <<< ERROR!
+org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+### The error may exist in cn/bj/dao/StudentDao.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select name,id,email,age from student          WHERE name=?                                           or age>?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectStudentWhere(TestMybatis.java:46)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectStudentWhere(TestMybatis.java:46)
+
+testSelectForeachOne(cn.bj.TestMybatis)  Time elapsed: 0.044 s  <<< ERROR!
+org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+### The error may exist in cn/bj/dao/StudentDao.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select name,id,email,age from student where id in          (               ?          ,              ?          ,              ?          )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectForeachOne(TestMybatis.java:82)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectForeachOne(TestMybatis.java:82)
+
+testSelectForeachTwo(cn.bj.TestMybatis)  Time elapsed: 0.071 s  <<< ERROR!
+org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+### The error may exist in cn/bj/dao/StudentDao.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select * from student where id in          (               ?          ,              ?          )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectForeachTwo(TestMybatis.java:99)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectForeachTwo(TestMybatis.java:99)
+
+testSelectStudentIf(cn.bj.TestMybatis)  Time elapsed: 0.079 s  <<< ERROR!
+org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+### The error may exist in cn/bj/dao/StudentDao.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select name ,id,email,age        from student         where                       name=?                                 or age>?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectStudentIf(TestMybatis.java:24)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'sys.student' doesn't exist
+	at cn.bj.TestMybatis.testSelectStudentIf(TestMybatis.java:24)
+

@@ -1,0 +1,7 @@
+cn\bj\utils\MybatisUtil.class
+cn\bj\utils\wuguan.class
+cn\bj\domain\Student.class
+cn\bj\vo\QueueParam.class
+cn\bj\vo\ViewStudent.class
+cn\bj\dao\StudentDao.class
+cn\bj\domain\MyStudent.class

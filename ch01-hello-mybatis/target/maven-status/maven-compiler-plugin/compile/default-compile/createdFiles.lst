@@ -1,0 +1,5 @@
+com\bjpowenode\dao\StudentDao.class
+com\bjpowenode\utils\MybatisUtil.class
+com\bjpowenode\MyApp.class
+com\bjpowenode\domain\Student.class
+com\bjpowenode\MyApp2.class
